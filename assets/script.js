@@ -16,3 +16,8 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+// Ajout des Variables
+const bulletPoints = document.querySelector('.dots');
+const bannerImage = document.querySelector('.banner-img');
+const tagLine = document.querySelector('#banner p');
+let activeSlideIndex = 0; 
