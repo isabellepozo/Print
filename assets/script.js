@@ -25,5 +25,12 @@ let activeSlideIndex = 0;
 // Ajout des Event Listeners sur les flèches
 const arrows = document.querySelectorAll('.arrow');
 arrows.forEach(function(arrow) {
-	arrow.addEventListener('click', function() 
-
+	arrow.addEventListener('click', function() {
+		if (arrow.classList.contains('arrow_left')) {
+			activeSlideIndex = (activeSlideIndex - 1 + slides.length) % slides.length;
+		} else if (arrow.classList.contains('arrow_right')) {
+			activeSlideIndex = (activeSlideIndex + 1) % slides.length;
+		}
+		updateSlide(activeSlideIndex);  
+		});
+	});
