@@ -34,3 +34,15 @@ arrows.forEach(function(arrow) {
 		updateSlide(activeSlideIndex);  
 		});
 	});
+
+// Ajout des Bullet Points
+for (let i = 0; i < slides.length; i++) {
+	const bullet = document.createElement('div');	
+	bullet.classList.add('dot');
+	bullet.setAttribute('data-index', i); 
+	bullet.addEventListener('click', function() {
+	  const clickedIndex = parseInt(bullet.getAttribute('data-index'));
+	  updateSlide(clickedIndex); 
+	});
+	bulletPoints.appendChild(bullet);
+  }
