@@ -24,4 +24,6 @@ let activeSlideIndex = 0;
 
 // Ajout des Event Listeners sur les flèches
 const arrows = document.querySelectorAll('.arrow');
+arrows.forEach(function(arrow) {
+	arrow.addEventListener('click', function() 
 
