@@ -16,7 +16,7 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
-// Déclarer les constantes et variables
+// Déclarer les constantes et variable
 const bulletPoints = document.querySelector('.dots');
 const bannerImage = document.querySelector('.banner-img');
 const tagLine = document.querySelector('#banner p');
