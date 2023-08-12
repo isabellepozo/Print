@@ -46,3 +46,21 @@ for (let i = 0; i < slides.length; i++) {
 	});
 	bulletPoints.appendChild(bullet);
   }
+
+  // Fonction mise à jour des éléments visuels
+function updateSlide(slideIndex) {
+	activeSlideIndex = slideIndex; // Mettez à jour l'index actif
+	const slide = slides[activeSlideIndex];
+	bannerImage.src = `assets/images/slideshow/${slide.image}`;
+	tagLine.innerHTML = slide.tagLine;
+	const bullets = bulletPoints.querySelectorAll('.dot');
+	bullets.forEach((bullet, index) => {
+	  if (index === activeSlideIndex) {
+		bullet.classList.add('dot_selected');
+	  } else {
+		bullet.classList.remove('dot_selected');
+	  }
+	});
+  }
+ 
+updateSlide(activeSlideIndex);  
