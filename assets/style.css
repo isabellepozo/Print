@@ -121,8 +121,8 @@ header {
 	object-fit: cover;
 	object-position: center;
 }
-/* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
-/* Gestion des fleches du carrousel */
+/* Code CSS en prévision de l'ajout d'un caroussel pour la bannière */
+/* Gestion des fleches du caroussel */
 #banner .arrow {
 	position: absolute;
   	width: 40px; 
@@ -142,7 +142,7 @@ header {
 	right: 10px;
   	background-position: center;
 }
-/* Gestion des points du carrousel */
+/* Gestion des points du caroussel */
 .dots {
 	position: absolute;
 	bottom: 40px;
@@ -160,7 +160,8 @@ header {
 .dot_selected {
 	background-color: #fff;
 }
-/* Fin du code CSS pour le carousel */
+/* Fin du code CSS pour le caroussel */
+
 #banner p {
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 900;

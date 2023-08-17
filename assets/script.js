@@ -22,7 +22,7 @@ const bannerImage = document.querySelector('.banner-img');
 const tagLine = document.querySelector('#banner p');
 let activeSlideIndex = 0; 
 
-// Ajout des Event Listeners sur les flèches
+// Les flèches
 const arrows = document.querySelectorAll('.arrow');
 arrows.forEach(function(arrow) {
 	arrow.addEventListener('click', function() {
@@ -41,15 +41,15 @@ for (let i = 0; i < slides.length; i++) {
 	bullet.classList.add('dot');
 	bullet.setAttribute('data-index', i); 
 	bullet.addEventListener('click', function() {
-	  const clickedIndex = parseInt(bullet.getAttribute('data-index'));
-	  updateSlide(clickedIndex); 
+	  const clickBullet = parseInt(bullet.getAttribute('data-index'));
+	  updateSlide(clickBullet); 
 	});
 	bulletPoints.appendChild(bullet);
   }
 
   // Fonction mise à jour des éléments visuels
 function updateSlide(slideIndex) {
-	activeSlideIndex = slideIndex; // Mettez à jour l'index actif
+	activeSlideIndex = slideIndex; // Mettre à jour l'index actif
 	const slide = slides[activeSlideIndex];
 	bannerImage.src = `assets/images/slideshow/${slide.image}`;
 	tagLine.innerHTML = slide.tagLine;
@@ -63,4 +63,4 @@ function updateSlide(slideIndex) {
 	});
   }
  
-updateSlide(activeSlideIndex);  
+  updateSlide(activeSlideIndex); 
